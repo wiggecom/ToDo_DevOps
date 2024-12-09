@@ -22,5 +22,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Show variable
       run: echo "Variable ${{ env.thisvariable }}"
-    - name: Show slogan
-      run: echo ${{ slogan }}
+    - name: Show env slogan
+      run: echo "${{ env.slogan }}"
+    - name: Show vars slogan
+      run: echo "${{ vars.slogan }}"
