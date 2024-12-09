@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       thisvariable: 'this variable'
-      slogan: ${{ vars.slogan }}
+      slogan: ${{ vars.SlOGAN }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -25,4 +25,4 @@ jobs:
     - name: Show env slogan
       run: echo "${{ env.slogan }}"
     - name: Show vars slogan
-      run: echo "${{ vars.slogan }}"
+      run: echo "${{ vars.SLOGAN }}"
