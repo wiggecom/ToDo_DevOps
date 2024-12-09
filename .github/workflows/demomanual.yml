@@ -21,6 +21,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Show variable
-      run: echo "Hello ${{ env.thisvariable }}"
+      run: echo "Variable ${{ env.thisvariable }}"
     - name: Show slogan
-      run: echo $slogan
+      run: echo ${{ slogan }}
